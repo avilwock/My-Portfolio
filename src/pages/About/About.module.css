@@ -1,5 +1,6 @@
+
 h2 {
-    color: black;
+    color: var(--text-h);
     margin: 10px;
 }
 

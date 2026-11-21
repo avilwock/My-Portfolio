@@ -1,8 +1,8 @@
 .contactTitle {
     font-size: 72px;
     margin-top: 30px;
-    font-family: "Tangerine", cursive;
-    color: black;
+    font-family: var(--heading);
+    color: var(--text-h);
 }
 
 form {
@@ -19,7 +19,9 @@ button {
     margin: 10px;
     border-radius: 8px;
     font-size: 35px;
-    
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
 }
 
 input {
@@ -27,6 +29,9 @@ input {
     border-radius: 6px;
     height: 30px;
     font-size: 25px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
 }
 
 textarea {
@@ -34,4 +39,7 @@ textarea {
     margin-top: 10px;
     height: 200px;
     border-radius: 6px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
 }

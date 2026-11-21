@@ -1,12 +1,4 @@
 
-:root {
-  --bg: #E9E1D2;
-  --surface: #252338;
-  --primary: #D4D6E6;
-  --text: #242229;
-  --button: #4B506F;
-}
-
 body {
     background-color: var(--bg);
     color: var(--text);
@@ -17,14 +9,13 @@ body {
     z-index: 10;
     border-radius: 8px;
     background: linear-gradient(
-    120deg,
-    #171624,
-    #252338,
-    #5E627D,
-    #252338,
-    #171624
-);
-
+        120deg,
+        var(--bg),
+        var(--code-bg),
+        var(--border),
+        var(--code-bg),
+        var(--bg)
+    );
 
     display: flex;
     justify-content: space-between;
@@ -35,12 +26,12 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
 
-    border: 3px solid #171624;
+    border: 3px solid var(--border);
 
-box-shadow:
-    0 0 0 2px #5E627D,
-    0 0 0 4px #252338,
-    0 3px 8px rgba(0,0,0,0.35);
+    box-shadow:
+        0 0 0 2px var(--accent),
+        0 0 0 4px var(--code-bg),
+        0 3px 8px rgba(0,0,0,0.35);
 }
 
 .logo {
@@ -49,18 +40,18 @@ box-shadow:
 
 .buttons {
     display: flex;
-    gap:1.00rem;
+    gap: 1rem;
     margin-top: 10px;
 }
 
 .button {
-    background-color: var(--button);
-    color: var(--primary);
+    background-color: var(--accent);
+    color: var(--bg);
     padding: 0.3rem .5rem;
     margin: .25rem;
     border-radius: 9px;
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid var(--border);
     width: 110px;
     height: 60px;
     box-sizing: border-box;
@@ -74,8 +65,8 @@ box-shadow:
     opacity: 0.6;
 }
 
-.button:click {
-    color: var(--primary)
+.button:active {
+    color: var(--text);
 }
 
 .navContent {
@@ -85,20 +76,20 @@ box-shadow:
 }
 
 .announcement h2 {
-  margin-top: 16px;
-  color: var(--bg);
-  font-family: "Tangerine", cursive;
-  font-size: 36px;
-  font-weight: 300;
-  animation: announcement-fade 500ms ease;
+    margin-top: 16px;
+    color: var(--text-h);
+    font-family: "Tangerine", cursive;
+    font-size: 36px;
+    font-weight: 300;
+    animation: announcement-fade 500ms ease;
 }
 
 .announcementDots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0px;
 }
 
 .announcementDots button {
@@ -111,7 +102,7 @@ box-shadow:
     padding: 0;
     border: none;
     border-radius: 50%;
-    background: #9293A8;
+    background: var(--muted);
     cursor: pointer;
     flex: 0 0 8px;
     transition: background 200ms ease;
@@ -122,41 +113,40 @@ box-shadow:
     height: 8px;
     flex: 0 0 24px;
     border-radius: 10px;
-    background: var(--bg);
+    background: var(--accent);
 }
 
 .announcementDots button:focus-visible {
-  outline: 2px solid var(--bg);
-  outline-offset: 4px;
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
 }
 
 @keyframes announcement-fade {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .announcement h2 {
-    animation: none;
-  }
+    .announcement h2 {
+        animation: none;
+    }
 
-  .announcementDots button {
-    transition: none;
-  }
+    .announcementDots button {
+        transition: none;
+    }
 }
 
 .navItem {
     position: relative;
     display: flex;
     justify-content: center;
-    
 }
 
 .dropdown {
@@ -167,8 +157,8 @@ box-shadow:
     width: max-content;
     min-width: 150px;
     padding: 8px;
-    background: #252338;
-    border: 1px solid #5E627D;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
     z-index: 20;
@@ -183,16 +173,15 @@ box-shadow:
 .dropdownLink {
     display: block;
     padding: 6px 8px;
-    color: var(--primary);
+    color: var(--text);
     font-size: 14px;
     text-decoration: none;
     border-radius: 4px;
     white-space: nowrap;
-
 }
 
 .dropdownLink:hover {
-    background-color: var(--button);
+    background-color: var(--accent-bg);
 }
 
 .cart {
@@ -217,8 +206,8 @@ box-shadow:
     position: absolute;
     top: -2px;
     right: -3px;
-    background-color: #a65b45;
-    color: white;
+    background-color: var(--accent);
+    color: var(--bg);
     font-size: 0.7rem;
     border-radius: 50%;
     min-width: 18px;

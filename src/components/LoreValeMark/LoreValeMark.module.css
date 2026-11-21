@@ -1,5 +1,6 @@
+
 .logo {
-    color: var(--primary);
+    color: var(--accent);
     font-family: "Tangerine", cursive;
     font-size: 55px;
     font-weight: 400;
@@ -14,9 +15,9 @@
     height: 2px;
     background: linear-gradient(
         90deg,
-        #252338,
-        #D4D6E6,
-        #252338
+        var(--border),
+        var(--text-h),
+        var(--border)
     );
     margin: 8px 0 10px;
 }

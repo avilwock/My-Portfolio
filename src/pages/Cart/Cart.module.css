@@ -6,6 +6,7 @@
 
 .cart h1 {
     margin-bottom: 30px;
+    color: var(--text-h);
 }
 
 .cartItems {
@@ -19,7 +20,7 @@
     align-items: center;
     gap: 25px;
     padding: 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--border);
 }
 
 .image {
@@ -30,6 +31,7 @@
 
 .itemDetails {
     flex: 1;
+    color: var(--text);
 }
 
 .quantity {
@@ -42,17 +44,21 @@
 .quantity button {
     padding: 5px 12px;
     cursor: pointer;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
 }
 
 .remove {
     border: none;
     background: none;
-    color: #a33;
+    color: var(--text-h);
     cursor: pointer;
 }
 
 .itemTotal {
     font-weight: bold;
+    color: var(--text);
 }
 
 .cartSummary {
@@ -60,7 +66,9 @@
     margin-left: auto;
     max-width: 350px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
 }
 
 .checkout {
@@ -68,4 +76,7 @@
     padding: 12px;
     margin-top: 15px;
     cursor: pointer;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
 }

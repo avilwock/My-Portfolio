@@ -1,16 +1,17 @@
+
 .footer {
     background: linear-gradient(
         120deg,
-        #1f1e30,
-        #252338,
-        #3d4058,
-        #252338,
-        #1f1e30
+        var(--bg),
+        var(--code-bg),
+        var(--border),
+        var(--code-bg),
+        var(--bg)
     );
 }
 
 .mark {
-    padding:10px 0;
+    padding: 10px 0;
     margin: 10px;
 }
 
@@ -21,14 +22,14 @@
 }
 
 .list {
-    color: var(--primary);
+    color: var(--accent);
     text-align: left;
     padding-left: 1.5rem;
     margin-right: 15px;
 }
 
 .link {
-    color: var(--primary);
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -38,15 +39,6 @@
 
 .footer {
     position: relative;
-
-    background: linear-gradient(
-        120deg,
-        #1f1e30,
-        #252338,
-        #3d4058,
-        #252338,
-        #1f1e30
-    );
 }
 
 .footer::before {
@@ -55,16 +47,14 @@
     left: 0;
     right: 0;
     top: 0;
-
     height: 8px;
 
     background: linear-gradient(
-    to bottom,
-    #171624,
-    #252338,
-    #5E627D,
-    #252338,
-    #171624
-);
+        to bottom,
+        var(--bg),
+        var(--code-bg),
+        var(--accent),
+        var(--code-bg),
+        var(--bg)
+    );
 }
-
