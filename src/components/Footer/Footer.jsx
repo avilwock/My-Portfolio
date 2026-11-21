@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import LoreValeMark from '../LoreValeMark/LoreValeMark'
+import WaterMark from '../WaterMark/WaterMark'
 import { Link } from "react-router-dom";
 
 
@@ -14,7 +14,7 @@ function Footer () {
 return (
     <div className ={styles.footer}>
         <div className = {styles.container}>
-            <LoreValeMark size="small" className={styles.mark}/>
+            <WaterMark size="small" className={styles.mark}/>
         
         <ul className={styles.list}>
             {links.map((link) => (

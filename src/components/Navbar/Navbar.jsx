@@ -1,5 +1,5 @@
 import styles from './Navbar.module.css'
-import LoreValeMark from '../LoreValeMark/LoreValeMark'
+import WaterMark from '../WaterMark/WaterMark'
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import authors from "../../data/author";
@@ -48,7 +48,7 @@ function Navbar() {
 return (
     <nav className={styles.navbar}>
         <div className={styles.logo}>
-            <LoreValeMark />
+            <WaterMark />
         </div>
 
         <div className={styles.navContent}>
