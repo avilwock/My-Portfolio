@@ -1,27 +1,27 @@
 const calendarEvents = [
     {
         id: 1,
-        title: "Example Book Release",
-        date: "2026-11-20",
+        title: "Example Product Release",
+        date: "2026-11-30",
         category: "release",
-        author: "author Name",
-        description: "An exciting new release!"
+        author: "Amanda Vilwock",
+        description: "A new app!"
     },
     {
         id: 2,
-        title: "Example Author Event",
-        date: "2026-11-25",
-        category: "event",
-        author: "Author Name",
-        description: "Join us for an upcoming author event."
+        title: "Application update",
+        date: "2026-12-15",
+        category: "update",
+        author: "Amanda Vilwock",
+        description: "Get ready for the newest application update"
     },
     {
         id: 3,
-        title: "Example Promotion",
-        date: "2026-11-28",
-        category: "promotion",
-        author: "LoreVale",
-        description: "A special promotional event."
+        title: "Application Announcement",
+        date: "2026-12-30",
+        category: "announcement",
+        author: "Amanda Vilwock",
+        description: "An upcoming project"
     }
 ]
 

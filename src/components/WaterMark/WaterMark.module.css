@@ -1,6 +1,6 @@
 
 .logo {
-    color: var(--accent);
+    color: var(--bg);
     font-family: "Tangerine", cursive;
     font-size: 55px;
     font-weight: 400;
@@ -13,12 +13,7 @@
 .divider {
     width: 90px;
     height: 2px;
-    background: linear-gradient(
-        90deg,
-        var(--border),
-        var(--text-h),
-        var(--border)
-    );
+    background: var(--code-bg);
     margin: 8px 0 10px;
 }
 

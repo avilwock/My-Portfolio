@@ -8,14 +8,7 @@ body {
     position: relative;
     z-index: 10;
     border-radius: 8px;
-    background: linear-gradient(
-        120deg,
-        var(--bg),
-        var(--code-bg),
-        var(--border),
-        var(--code-bg),
-        var(--bg)
-    );
+    background: var(--border);
 
     display: flex;
     justify-content: space-between;

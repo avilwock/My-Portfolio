@@ -22,12 +22,12 @@ function SlideBar() {
 
     return (
         <div className={styles.hero}>
-          <h2>Featured Releases</h2>
+          <h2 className={styles.heroTitle}>Projects</h2>
             <Link
                 to={`/featuredbooks`}
                 className={styles.booklink}
             >
-                Featured Books
+                Featured Projects
             </Link>
            
             <section className={styles.bookslide}>
@@ -40,13 +40,15 @@ function SlideBar() {
                
 
                 <div className={styles.bookinfo}>
-                    <p className={styles.genre}>
-                        {featured[activeBook].genre}
-                    </p>
+                    
 
                     <h3 key={activeBook}>
                         {featured[activeBook].title}
                     </h3>
+
+                    <p className={styles.genre}>
+                        {featured[activeBook].genre}
+                    </p>
 
                     <p className={styles.tagline}>
                         {featured[activeBook].tagline}
@@ -60,7 +62,7 @@ function SlideBar() {
                         to={`/books/${featured[activeBook].id}`}
                         className={styles.booklink}
                         >
-                            Discover Book
+                            Discover More Info
                         </Link>
                 </div>
             </section>
@@ -118,15 +120,8 @@ function Home() {
         <div>
           <SlideBar />
             <div className={styles.home}>
-                <h1>Welcome to LoreVale Studios</h1>
-                <p>
-                    A home for stories across worlds, mysteries, and imagination.
-                </p>
+    
             </div>
-
-            
-
-            <h2>Featured Authors</h2>
         </div>
     );
 }

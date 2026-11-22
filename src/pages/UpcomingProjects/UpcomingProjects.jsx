@@ -1,6 +1,6 @@
 import authors from "../../data/author";
 import { Link } from "react-router-dom";
-import "./Authors.module.css"
+import "./UpcomingProjects.module.css"
 
 function Authors() {
     return (
@@ -11,7 +11,7 @@ function Authors() {
                     <h2>{author.name}</h2>
                     <p> {author.category}</p>
 
-                    <Link to={`/authors/${author.slug}`}>
+                    <Link to={`/upcoming-projects/${author.slug}`}>
                     View Profile</Link>
                 </div>
             ))}

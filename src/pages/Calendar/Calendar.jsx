@@ -117,12 +117,12 @@ function Calendar() {
                 </div>
 
                 <div>
-                    <span className={styles.event}></span>
+                    <span className={styles.update}></span>
                     Author Events
                 </div>
 
                 <div>
-                    <span className={styles.promotion}></span>
+                    <span className={styles.announcement}></span>
                     Promotions
                 </div>
             </div>

@@ -2,8 +2,11 @@
 h2 {
     color: var(--text-h);
     margin: 10px;
+    font-size: 36px;
 }
 
 p {
-    margin: 4px;
+    margin: 25px 15px;
+    font-size: 20px;
 }
+

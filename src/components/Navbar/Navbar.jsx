@@ -8,9 +8,9 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import  { useCart } from "../../context/useCart/useCart";
 
 const announcements = [
-        {title: "Discover Stories"},
-        {title: "Explore New Worlds"},
-        {title: "Create Something Wonderful"},
+        {title: "Build Thoughtful Experiences"},
+        {title: "Design With Purpose"},
+        {title: "Turn Ideas Into Reality"},
 ];
 
 function Navbar() {
@@ -25,7 +25,7 @@ function Navbar() {
     
     const links = [
         {name: "Home", path: "/"},
-        {name: "Authors", path: "/authors"},
+        {name: "Upcoming Projects", path: "/upcoming-projects"},
         {name: "Shop", path: "/shop"},
         {name: "About", path: "/about"},
         {name: "Contact Us", path: "/contact"},
@@ -62,12 +62,12 @@ return (
                 {link.name}
             </Link>
 
-            {link.name === "Authors" && (
+            {link.name === "Upcoming Projects" && (
                 <div className={styles.dropdown}>
                     {authors.map((author) => (
                         <Link
                             key={author.slug}
-                            to={`/authors/${author.slug}`}
+                            to={`/upcoming-projects/${author.slug}`}
                             className={styles.dropdownLink}
                         >
                             {author.name}
@@ -91,7 +91,7 @@ return (
 </div>
             <div            
                 className={styles.hero}
-                aria-label="LoreVale announcements"
+                aria-label="Vilwock Design announcements"
             >
                 <div className={styles.announcement} aria-live="polite">
                     <h2 key={activeSlide}>

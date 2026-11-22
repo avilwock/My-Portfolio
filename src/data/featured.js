@@ -1,32 +1,32 @@
 const featured = [
     {
         id: 1,
-        title: "Discover Stories",
-        genre: "DARK FANTASY",
-        tagline: "A compelling tagline about the story goes here.",
-        author: "Author Name",
+        title: "Goal Galaxy",
+        genre: "A goal planning app",
+        tagline: "A project made using react, mongoose, and graphql",
+        author: "Amanda Vilwock",
         cover: "src/assets/placeholder.jpeg",
-        link: "#",
+        link: "https://github.com/avilwock/Goal-Galaxy-MVP",
         isFeatured: true
     },
     {
         id: 2,
-        title: "Explore New Worlds",
-        genre: "FANTASY",
-        tagline: "Step into a world filled with wonder and mystery.",
-        author: "Author Name",
+        title: "Snippets",
+        genre: "An idea capture application",
+        tagline: "A project made using react and mongoose",
+        author: "Amanda Vilwock",
         cover: "src/assets/placeholder.jpeg",
-        link: "#",
+        link: "https://github.com/avilwock/Snippets",
         isFeatured: true
     },
     {
         id: 3,
-        title: "Create Something Wonderful",
-        genre: "FICTION",
-        tagline: "Discover a story waiting to be told.",
-        author: "Author Name",
+        title: "LoreVale Studios",
+        genre: "A promotional app for self-publishers",
+        tagline: "A react based application",
+        author: "Amanda Vilwock",
         cover: "src/assets/placeholder.jpeg",
-        link: "#",
+        link: "https://github.com/avilwock/LoreVale-Studios",
     },
 ]
 

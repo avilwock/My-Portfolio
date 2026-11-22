@@ -14,9 +14,9 @@ function BookDetails() {
 
     return (
         <div>
-            <img src={book.cover} alt={book.title} />
 
             <h1>{book.title}</h1>
+            <img src={book.cover} alt={book.title} />
             <p>{book.genre}</p>
             <p>{book.tagline}</p>
             <p>By {book.author}</p>

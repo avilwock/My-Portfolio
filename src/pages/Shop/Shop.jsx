@@ -7,7 +7,7 @@ function Shop() {
 
     return (
         <div className={styles.shop}>
-            <h1>The LoreVale Shop</h1>
+            <h1>Test Shop</h1>
 
             <div className={styles.productSection}>
                 {products.map((product) => (
