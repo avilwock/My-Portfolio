@@ -8,7 +8,8 @@ function Footer () {
     const links = [
         {name: "Featured Projects", path: "/featured"},
         {name: "About", path: "/about"},
-        {name: "Contact", path: "/contact"}
+        {name: "Contact", path: "/contact"},
+        {name: "Github", href: "github.com/avilwock"}
     ];
 
 return (
@@ -19,12 +20,20 @@ return (
         <ul className={styles.list}>
             {links.map((link) => (
                 <li key={link.name}>
-                    <Link
-                        to={link.path}
-                        className={styles.link}
-                    >
-                        {link.name}
-                    </Link>
+                    {link.path ? (
+                        <Link to={link.path} className={styles.link}>
+                            {link.name}
+                        </Link>
+                    ) : (
+                        <a
+                            href={`https://${link.href}`}
+                            className={styles.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {link.name}
+                        </a>
+                    )}
                 </li>
             ))}
         </ul>
