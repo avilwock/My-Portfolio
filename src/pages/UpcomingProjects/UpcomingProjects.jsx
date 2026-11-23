@@ -1,17 +1,17 @@
-import authors from "../../data/author";
+import project from "../../data/projects";
 import { Link } from "react-router-dom";
 import "./UpcomingProjects.module.css"
 
-function Authors() {
+function Projects() {
     return (
         <div className="home">
-            <h1>Meet Our Authors</h1>
-            {authors.map((author) => (
-                <div key = {author.slug}>
-                    <h2>{author.name}</h2>
-                    <p> {author.category}</p>
+            <h1>Upcoming Projects</h1>
+            {project.map((project) => (
+                <div key = {project.slug}>
+                    <h2>{project.name}</h2>
+                    <p> {project.description}</p>
 
-                    <Link to={`/upcoming-projects/${author.slug}`}>
+                    <Link to={`/projects/${project.slug}`}>
                     View Profile</Link>
                 </div>
             ))}
@@ -19,4 +19,4 @@ function Authors() {
     )
 }
 
-export default Authors;
+export default Projects;

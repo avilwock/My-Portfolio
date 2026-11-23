@@ -8,59 +8,59 @@ import { Link } from "react-router-dom";
 
 
 function SlideBar() {
-    const [activeBook, setActiveBook] = useState(0);
+    const [activeProject, setActiveProject] = useState(0);
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setActiveBook((current) =>
+            setActiveProject((current) =>
                 (current + 1) % featured.length
             );
         }, 5000);
 
         return () => clearTimeout(timer);
-    }, [activeBook]);
+    }, [activeProject]);
 
     return (
         <div className={styles.hero}>
           <h2 className={styles.heroTitle}>Projects</h2>
             <Link
                 to={`/featured`}
-                className={styles.booklink}
+                className={styles.projectlink}
             >
                 Featured Projects
             </Link>
            
-            <section className={styles.bookslide}>
-                <div className={styles.bookcover}>
+            <section className={styles.projectslide}>
+                <div className={styles.projectcover}>
                     <img
-                        src={featured[activeBook].cover}
-                        alt="Featured book cover"
+                        src={featured[activeProject].cover}
+                        alt="Featured project cover"
                     />
                 </div>
                
 
-                <div className={styles.bookinfo}>
+                <div className={styles.projectinfo}>
                     
 
-                    <h3 key={activeBook}>
-                        {featured[activeBook].title}
+                    <h3 key={activeProject}>
+                        {featured[activeProject].title}
                     </h3>
 
                     <p className={styles.genre}>
-                        {featured[activeBook].genre}
+                        {featured[activeProject].genre}
                     </p>
 
                     <p className={styles.tagline}>
-                        {featured[activeBook].tagline}
+                        {featured[activeProject].tagline}
                     </p>
 
                     <p className={styles.author}>
-                        By {featured[activeBook].author}
+                        By {featured[activeProject].author}
                     </p>
 
                     <Link
-                        to={`/books/${featured[activeBook].id}`}
-                        className={styles.booklink}
+                        to={`/featured`}
+                        className={styles.projectlink}
                         >
                             Discover More Info
                         </Link>
@@ -72,11 +72,11 @@ function SlideBar() {
         type="button"
         className={styles.prevButton}
         onClick={() =>
-            setActiveBook((current) =>
+            setActiveProject((current) =>
                 (current - 1 + featured.length) % featured.length
             )
         }
-        aria-label="Previous featured book"
+        aria-label="Previous featured project"
     >
         &#10094;
     </button>
@@ -84,16 +84,16 @@ function SlideBar() {
     <div className={styles.announcementDots}
         aria-label="Choose featured slide"
     >
-        {featured.map((book, index) => (
+        {featured.map((project, index) => (
             <button
-                key={book.title}
+                key={project.title}
                 type="button"
                 className={
-                    index === activeBook ? styles.active : ""
+                    index === activeProject ? styles.active : ""
                 }
-                onClick={() => setActiveBook(index)}
+                onClick={() => setActiveProject(index)}
                 aria-label={`Show slide ${index + 1}`}
-                aria-pressed={index === activeBook}
+                aria-pressed={index === activeProject}
             />
         ))}
     </div>
@@ -102,11 +102,11 @@ function SlideBar() {
         type="button"
         className={styles.nextButton}
         onClick={() =>
-            setActiveBook((current) =>
+            setActiveProject((current) =>
                 (current + 1) % featured.length
             )
         }
-        aria-label="Next featured book"
+        aria-label="Next featured link"
     >
         &#10095;
     </button>

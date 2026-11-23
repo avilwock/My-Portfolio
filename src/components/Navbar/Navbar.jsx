@@ -2,7 +2,7 @@ import styles from './Navbar.module.css'
 import WaterMark from '../WaterMark/WaterMark'
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import authors from "../../data/author";
+import projects from "../../data/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import  { useCart } from "../../context/useCart/useCart";
@@ -64,13 +64,13 @@ return (
 
             {link.name === "Upcoming Projects" && (
                 <div className={styles.dropdown}>
-                    {authors.map((author) => (
+                    {projects.map((project) => (
                         <Link
-                            key={author.slug}
-                            to={`/upcoming-projects/${author.slug}`}
+                            key={project.slug}
+                            to={`/projects/${project.slug}`}
                             className={styles.dropdownLink}
                         >
-                            {author.name}
+                            {project.name}
                         </Link>
                     ))}
                 </div>

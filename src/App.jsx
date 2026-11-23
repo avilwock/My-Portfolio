@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Shop from "./pages/Shop/Shop";
 import UpcomingProjects from "./pages/UpcomingProjects/UpcomingProjects";
-// import AuthorPage from "./pages/AuthorPage/AuthorPage";
+// import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -12,7 +12,7 @@ import Calendar from "./pages/Calendar/Calendar";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import{CartProvider} from "./context/CartContext/CartContext";
 import FeaturedWorks from "./pages/FeaturedWorks/FeaturedWorks";
-import BookDetails from "./pages/BookDetails/BookDetails";
+import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 import Cart from "./pages/Cart/Cart";
 
 function App() {
@@ -30,11 +30,12 @@ function App() {
             <Route path="/upcoming-projects" element={<UpcomingProjects />} />
             <Route path="/upcomingProjects/:upcomingProjectsId" element ={<UpcomingProjects />} />
             <Route path="/featured" element={<FeaturedWorks />} />
-            <Route path="/books/:bookId" element={<BookDetails />} />
+            <Route path="/projects/:projectId" element={<ProjectDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="*" element ={<ErrorPage />} />
+            {/* <Route path="/projects/:projectId" element ={<ProjectPage />} /> */}
           </Routes>
         </main>
 

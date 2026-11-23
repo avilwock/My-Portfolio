@@ -10,7 +10,7 @@ img {
     width: 12px;
 }
 
-.bookslide {
+.projectslide {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -22,11 +22,11 @@ img {
     height: 350px;
 }
 
-.bookcover {
+.projectcover {
     flex: 0 0 35%;
 }
 
-.bookcover img {
+.projectcover img {
     display: block;
     width: 100%;
     max-width: 280px;
@@ -35,7 +35,7 @@ img {
     border-radius: 0.4rem;
 }
 
-.bookinfo {
+.projectinfo {
     flex: 1;
 }
 
@@ -45,7 +45,7 @@ img {
     font-size: 0.8rem;
 }
 
-.bookinfo h2 {
+.projectinfo h2 {
     font-size: 2.5rem;
     margin: 15px 0;
 }
@@ -55,7 +55,7 @@ img {
     font-size: 1.1rem;
 }
 
-.booklink {
+.projectlink {
     display: inline-block;
     background: var(--text-h);
     color: var(--bg);
