@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Footer () {
 
     const links = [
-        {name: "Featured Works", path: "FeaturedWorks"},
+        {name: "Featured Projects", path: "/featured"},
         {name: "About", path: "/about"},
         {name: "Contact", path: "/contact"}
     ];

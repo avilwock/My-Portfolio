@@ -1,10 +1,13 @@
 
-import "./About.module.css";
+import styles from "./About.module.css";
+import Profile from "../../assets/Profile.jpg"
 
 function About() {
     return (
-        <div className="home">
+        <div className={styles.home}>
             <h2>Who Am I?</h2>
+
+            <img  className={styles.pic} src={Profile}></img>
             <p>
                 I'm an aspiring web developer with a passion for building
                 functional, engaging, and user-friendly websites. I enjoy
