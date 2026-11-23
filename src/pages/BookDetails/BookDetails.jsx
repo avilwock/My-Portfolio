@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import featured from "../../data/featured";
+import styles from "../BookDetails/BookDetails.module.css"
 
 function BookDetails() {
     const { bookId } = useParams();
@@ -13,13 +14,14 @@ function BookDetails() {
     }
 
     return (
-        <div>
+        <div className={styles.container}>
 
             <h1>{book.title}</h1>
-            <img src={book.cover} alt={book.title} />
+            <img className={styles.bookimg} src={book.cover} alt={book.title} />
             <p>{book.genre}</p>
             <p>{book.tagline}</p>
             <p>By {book.author}</p>
+            <a href={book.link}>Github Link</a>
         </div>
     );
 }

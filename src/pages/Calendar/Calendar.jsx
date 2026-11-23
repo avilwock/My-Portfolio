@@ -42,7 +42,7 @@ function Calendar() {
 
     return (
         <div className={styles.calendar}>
-            <h1> LoreVale Calendar </h1>
+            <h1> Developing Calendar </h1>
 
             <div className={styles.monthNavigation}>
                 <button onClick={() => changeMonth(-1)}>
@@ -113,17 +113,17 @@ function Calendar() {
             <div className={styles.calendarKey}>
                 <div>
                     <span className={styles.release}></span>
-                    Book Releases
+                    Product Releases
                 </div>
 
                 <div>
                     <span className={styles.update}></span>
-                    Author Events
+                    Product Update
                 </div>
 
                 <div>
                     <span className={styles.announcement}></span>
-                    Promotions
+                    Announcements
                 </div>
             </div>
 

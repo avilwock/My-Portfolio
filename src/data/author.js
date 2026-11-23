@@ -1,16 +1,9 @@
 const authors =[
-    { name: "Author One",
-        slug: "author-one",
-        category: "fantasy"
+    { name: "HarmonIq",
+        slug: "Amanda Vilwock",
+        description: "A music theory learing application"
     },
-    { name: "Author Two",
-        slug: "author-two",
-        category: "romance"
-    },
-    { name: "Author Three",
-        slug: "author-three",
-        category: "Fantasy"
-    }
+   
 ]
 
 export default authors;

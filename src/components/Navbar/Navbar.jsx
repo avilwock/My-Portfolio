@@ -28,7 +28,7 @@ function Navbar() {
         {name: "Upcoming Projects", path: "/upcoming-projects"},
         {name: "Shop", path: "/shop"},
         {name: "About", path: "/about"},
-        {name: "Contact Us", path: "/contact"},
+        {name: "Contact Me", path: "/contact"},
         {name: "Calendar", path: "/calendar"}
     ];
 

@@ -1,0 +1,10 @@
+img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 15px;
+    border: 3px double var(--accent)
+}
+
+.container {
+    margin-bottom: 15px;
+}

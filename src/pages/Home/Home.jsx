@@ -24,7 +24,7 @@ function SlideBar() {
         <div className={styles.hero}>
           <h2 className={styles.heroTitle}>Projects</h2>
             <Link
-                to={`/featuredbooks`}
+                to={`/featured`}
                 className={styles.booklink}
             >
                 Featured Projects

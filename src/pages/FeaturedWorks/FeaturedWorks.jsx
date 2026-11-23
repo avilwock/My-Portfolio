@@ -1,9 +1,9 @@
-import styles from "../FeaturedBooks/FeaturedBooks.module.css";
+import styles from "../FeaturedWorks/FeaturedWorks.module.css";
 import featured from "../../data/featured";
 
-function FeaturedBooks() {
+function FeaturedWorks() {
     return (
-        <div className={styles.featuredBooks}>
+        <div className={styles.featuredWorks}>
             <h1>Featured Works</h1>
 
             <div className={styles.bookList}>
@@ -11,13 +11,14 @@ function FeaturedBooks() {
             .filter((book) => book.isFeatured === true)
             .map((book) => (
                 <div key={book.id} className={styles.bookCard}>
-                    <img src={book.cover} alt={book.title} />
+                    <img className={styles.projectimg} src={book.cover} alt={book.title} />
 
                     <div className={styles.bookInfo}>
                         <h2>{book.title}</h2>
                         <p className={styles.genre}>{book.genre}</p>
                         <p>{book.tagline}</p>
                         <p>By {book.author}</p>
+                        <a className = {styles.link} href={book.link}>Visit Github</a>
                     </div>
                 </div>
             ))}
@@ -26,4 +27,4 @@ function FeaturedBooks() {
     );
 }
 
-export default FeaturedBooks;
+export default FeaturedWorks;

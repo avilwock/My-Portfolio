@@ -11,7 +11,7 @@ function AuthorPage() {
     return (
         <div>
             <h1>Author: {author.name}</h1>
-            <p>Category: {author.category}</p>
+            <p>Category: {author.description}</p>
         </div>
     )
 }

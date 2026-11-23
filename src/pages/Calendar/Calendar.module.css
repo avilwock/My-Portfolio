@@ -39,6 +39,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
+    color: var(--bg)
 }
 
 .weekday {
@@ -147,13 +148,13 @@
 
 .eventCard h3 {
     margin-top: 0;
-    color: var(--bg);
+    color: var(--text);
     
 }
 
 .eventCard p {
     margin-bottom: 8px;
-    color: var(--bg) !important;
+    color: var(--text);
 }
 
 /* Mobile layout */
@@ -179,6 +180,7 @@
 
     .calendarGrid {
         gap: 3px;
+        color: var(--bg);
     }
 
     .day,
