@@ -14,7 +14,6 @@ import{CartProvider} from "./context/CartContext/CartContext";
 import FeaturedWorks from "./pages/FeaturedWorks/FeaturedWorks";
 import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 import Cart from "./pages/Cart/Cart";
-import Success from "./pages/Success/Success";
 
 function App() {
   return (
@@ -34,7 +33,6 @@ function App() {
             <Route path="/projects/:projectId" element={<ProjectDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/success" element={<Success />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="*" element ={<ErrorPage />} />
             {/* <Route path="/projects/:projectId" element ={<ProjectPage />} /> */}
