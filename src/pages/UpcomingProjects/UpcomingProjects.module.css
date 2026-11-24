@@ -1,0 +1,10 @@
+.project {
+    border: 5px double var(--text-h);
+    margin: 10px;
+    border-radius: 12px;
+    width: 65%;
+    justify-self: center;
+    background-color: var(--muted);
+    padding: 10px;
+    color: var(--bg)
+}
