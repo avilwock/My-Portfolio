@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 import { useEffect, useState } from "react";
 import featured from "../../data/featured";
 import { Link } from "react-router-dom";
-
+// import projects from "../../data/projects";
 
 
 
@@ -59,11 +59,11 @@ function SlideBar() {
                     </p>
 
                     <Link
-                        to={`/featured`}
+                        to={`/featured/${featured[activeProject].id}`}
                         className={styles.projectlink}
-                        >
-                            Discover More Info
-                        </Link>
+                    >
+                        Discover More Info
+                    </Link>
                 </div>
             </section>
 

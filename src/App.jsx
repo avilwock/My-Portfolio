@@ -35,6 +35,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="*" element ={<ErrorPage />} />
+            <Route path="/featured/:projectId" element={<ProjectDetails />} />
             {/* <Route path="/projects/:projectId" element ={<ProjectPage />} /> */}
           </Routes>
         </main>
