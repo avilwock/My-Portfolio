@@ -3,7 +3,7 @@ const projects =[
         name: "HarmonIq",
         slug: "harmoniq",
         category: "Music/Utility",
-        description: "A music theory learing application. Will give users a variety of practice lessons, and minigames",
+        description: "A music theory learning application. Will give users a variety of practice lessons, and minigames",
         planned: "React, CSS, and JavaScript",
         status: "Planned/In Development"
         
