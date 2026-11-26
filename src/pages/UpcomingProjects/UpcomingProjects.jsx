@@ -8,7 +8,7 @@ function UpcomingProjects() {
         <div className={styles.container}>
             <h1>Upcoming Projects</h1>
             {projects.map((project) => (
-                <div key={project.slug}>
+                <div className={styles.project}key={project.slug}>
                     <h2>{project.name}</h2>
                     <p>{project.category}</p>
                     <p>{project.description}</p>
